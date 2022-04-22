@@ -1,5 +1,5 @@
 {% set name = "esi-syncopy" %}
-{% set version = "0.20" %}
+{% set version = "0.21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-syncopy-{{ version }}.tar.gz
-  sha256: 6167d62a079563d296441b55d6a9491590a688df7eb94059e0ea980aac712c07
+  sha256: e09a1b54bf6c34a21c2f29e15ffbb4e9bf602b5b48fc6de18b08fbd618b1fc78
 
 build:
   noarch: python
@@ -53,7 +53,7 @@ about:
   license_file: LICENSE
   doc_url: https://syncopy.readthedocs.io
   dev_url: https://github.com/esi-neuroscience/syncopy
-  
+
 extra:
   recipe-maintainers:
     - tensionhead
