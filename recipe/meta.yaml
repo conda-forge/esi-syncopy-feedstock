@@ -1,5 +1,5 @@
 {% set name = "esi-syncopy" %}
-{% set version = "2022.5" %}
+{% set version = "2022.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-syncopy-{{ version }}.tar.gz
-  sha256: 24c18a0b00c9617b5553783a142b9213dc76f58cd4301d5abf75a422f37ba50f
+  sha256: d16682c646097e3a7f4974000657f35a51f41850ca2dd7a74533fb99b5f4d741
 
 build:
   noarch: python
