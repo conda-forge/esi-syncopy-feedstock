@@ -24,7 +24,7 @@ requirements:
     - setuptools
   run:
     - h5py <3,>=2.9
-    - matplotlib-base <3.5,>=3.3
+    - matplotlib-base >3.5
     - fooof
     - numpy <2.0,>=1.10
     - pip
@@ -32,6 +32,11 @@ requirements:
     - scipy >=1.5
     - tqdm >=4.31
     - psutil
+    - natsort
+    - esi-acme
+    - numpy-doc
+    - ipdb
+    - memory_profiler
 
 test:
   imports:
