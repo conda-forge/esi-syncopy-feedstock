@@ -33,8 +33,8 @@ requirements:
     - tqdm >=4.31
     - psutil
     - natsort
-    - esi-acme
-    - numpy-doc
+    - esi-acme ==2022.7
+    - numpydoc
     - ipdb
     - memory_profiler
 
