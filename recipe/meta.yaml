@@ -37,6 +37,8 @@ requirements:
     - natsort
     - numpydoc
     - toml
+    - ipdb
+    - memory-profiler
 
 test:
   imports:
