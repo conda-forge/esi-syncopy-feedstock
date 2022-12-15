@@ -25,11 +25,11 @@ requirements:
   run:
     - python >=3.7, <3.11
     - h5py >=3.7, <4
-    - dask[distributed] < 2022.11
-    - dask-jobqueue >= 0.7.1, < 0.9
+    - dask[distributed] <2022.11
+    - dask-jobqueue >=0.7.1, <0.9
     - matplotlib-base >=3.5
     - fooof
-    - numpy <2.0,>=1.10
+    - numpy <2.0, >=1.10
     - pip
     - scipy >=1.5
     - tqdm >=4.31
