@@ -1,5 +1,5 @@
 {% set name = "esi-syncopy" %}
-{% set version = "2022.8" %}
+{% set version = "2022.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-syncopy-{{ version }}.tar.gz
-  sha256: d16682c646097e3a7f4974000657f35a51f41850ca2dd7a74533fb99b5f4d741
+  sha256: 20369b786155bfcf4890bbaa163dc0733b2006eb5cfd7a438b93ee3cffdd5ab9
 
 build:
   noarch: python
@@ -17,26 +17,25 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8,<3.9
+    - python >=3.7
     - poetry
     - ruamel.yaml >=0.16,<0.17
     - wheel
     - setuptools
   run:
-    - h5py <3,>=2.9
-    - matplotlib-base >3.5
+    - python >=3.7, <3.11
+    - h5py >=3.7, <4
+    - dask[distributed] <2022.11
+    - dask-jobqueue >=0.7.1, <0.9
+    - matplotlib-base >=3.5
     - fooof
-    - numpy <2.0,>=1.10
+    - numpy <2.0, >=1.10
     - pip
-    - python >=3.8,<3.9
     - scipy >=1.5
     - tqdm >=4.31
     - psutil
     - natsort
-    - esi-acme ==2022.7
     - numpydoc
-    - ipdb
-    - memory_profiler
     - toml
 
 test:
