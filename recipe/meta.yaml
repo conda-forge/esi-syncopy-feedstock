@@ -38,7 +38,7 @@ requirements:
     - numpydoc
     - toml
     - ipdb
-    - memory-profiler
+    - memory_profiler
 
 test:
   imports:
