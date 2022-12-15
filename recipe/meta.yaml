@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-syncopy-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-{{ version }}.tar.gz
   sha256: 20369b786155bfcf4890bbaa163dc0733b2006eb5cfd7a438b93ee3cffdd5ab9
 
 build:
