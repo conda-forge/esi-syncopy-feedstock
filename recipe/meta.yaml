@@ -35,10 +35,7 @@ requirements:
     - tqdm >=4.31
     - psutil
     - natsort
-    - numpydoc
     - toml
-    - ipdb
-    - memory_profiler ==0.60.0
 
 test:
   imports:
