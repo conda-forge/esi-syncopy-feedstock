@@ -1,5 +1,5 @@
 {% set name = "esi-syncopy" %}
-{% set version = "2022.12" %}
+{% set version = "2023.03" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-{{ version }}.tar.gz
-  sha256: 20369b786155bfcf4890bbaa163dc0733b2006eb5cfd7a438b93ee3cffdd5ab9
+  sha256: fe72b44e7d5539fa59a3a7a6738852d09793427ba18fad90f796d171b844787c
 
 build:
   noarch: python
@@ -23,10 +23,10 @@ requirements:
     - wheel
     - setuptools
   run:
-    - python >=3.7, <3.11
+    - python >=3.8, <3.11
     - h5py >=3.7, <4
-    - dask[distributed] <2022.11
-    - dask-jobqueue >=0.7.1, <0.9
+    - dask[distributed] <2022.11, >=2022.6
+    - dask-jobqueue >=0.8, <0.9
     - matplotlib-base >=3.5
     - fooof
     - numpy <2.0, >=1.10
