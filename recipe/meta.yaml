@@ -1,14 +1,14 @@
 {% set name = "esi-syncopy" %}
-{% set version = "2023.03" %}
+{% set version = "2023.05" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.3.tar.gz
-  sha256: fe72b44e7d5539fa59a3a7a6738852d09793427ba18fad90f796d171b844787c
-
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.5.tar.gz
+  sha256: 8e9b8cf9b2f68db6807c7c3606d2a90e3e87c4d2847a9798ba075bbeb32e3f3b
+  
 build:
   noarch: python
   number: 0
