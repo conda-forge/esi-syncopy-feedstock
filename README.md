@@ -1,11 +1,11 @@
-About esi-syncopy
-=================
+About esi-syncopy-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/esi-syncopy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://syncopy.org
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/esi-syncopy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Systems Neuroscience Computing in Python
 
@@ -153,6 +153,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@dfsp-spirit](https://github.com/dfsp-spirit/)
 * [@pantaray](https://github.com/pantaray/)
 * [@tensionhead](https://github.com/tensionhead/)
 
