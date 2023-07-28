@@ -23,13 +23,13 @@ requirements:
     - wheel
     - setuptools
   run:
-    - python >=3.8, <3.11
-    - h5py >=3.7, <4
+    - python >=3.8,<3.11
+    - h5py >=3.7,<4
     - dask[distributed]
     - dask-jobqueue >=0.8
     - matplotlib-base >=3.5
     - fooof
-    - numpy <2.0, >=1.10
+    - numpy <2.0,>=1.10
     - pip
     - scipy >=1.10
     - tqdm >=4.31
