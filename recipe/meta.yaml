@@ -25,7 +25,8 @@ requirements:
   run:
     - python >=3.8,<3.11
     - h5py >=3.7,<4
-    - dask[distributed]
+    - dask
+    - distributed
     - dask-jobqueue >=0.8
     - matplotlib-base >=3.5
     - fooof
