@@ -1,13 +1,13 @@
 {% set name = "esi-syncopy" %}
-{% set version = "2023.05" %}
+{% set version = "2023.07" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.5.tar.gz
-  sha256: 8e9b8cf9b2f68db6807c7c3606d2a90e3e87c4d2847a9798ba075bbeb32e3f3b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.7.tar.gz
+  sha256: c4336e6d74e8b952cec752075450361069e9a2211a4ff888295e985e47bbef85 
   
 build:
   noarch: python
@@ -17,21 +17,22 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - poetry
     - ruamel.yaml >=0.16,<0.17
     - wheel
     - setuptools
   run:
-    - python >=3.8, <3.11
-    - h5py >=3.7, <4
-    - dask[distributed] <2022.11, >=2022.6
-    - dask-jobqueue >=0.8, <0.9
+    - python >=3.8,<3.11
+    - h5py >=3.7,<4
+    - dask
+    - distributed
+    - dask-jobqueue >=0.8
     - matplotlib-base >=3.5
     - fooof
-    - numpy <2.0, >=1.10
+    - numpy <2.0,>=1.10
     - pip
-    - scipy >=1.5
+    - scipy >=1.10
     - tqdm >=4.31
     - psutil
     - natsort
