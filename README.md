@@ -154,6 +154,7 @@ Feedstock Maintainers
 =====================
 
 * [@dfsp-spirit](https://github.com/dfsp-spirit/)
+* [@kajal5888](https://github.com/kajal5888/)
 * [@pantaray](https://github.com/pantaray/)
 * [@tensionhead](https://github.com/tensionhead/)
 

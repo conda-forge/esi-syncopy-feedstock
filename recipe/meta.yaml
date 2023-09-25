@@ -1,14 +1,14 @@
 {% set name = "esi-syncopy" %}
-{% set version = "2023.07" %}
+{% set version = "2023.09" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.7.tar.gz
-  sha256: c4336e6d74e8b952cec752075450361069e9a2211a4ff888295e985e47bbef85 
-  
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.9.tar.gz
+  sha256: a74b19c54310340b515cc89261ff072c65b748a6476e1ce7eafb61a21e124b24
+
 build:
   noarch: python
   number: 0
@@ -64,3 +64,4 @@ extra:
     - tensionhead
     - pantaray
     - dfsp-spirit
+    - kajal5888
