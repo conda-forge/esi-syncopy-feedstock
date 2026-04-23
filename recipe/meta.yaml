@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.9.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/esi_syncopy-2023.9.tar.gz
   sha256: a74b19c54310340b515cc89261ff072c65b748a6476e1ce7eafb61a21e124b24
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - poetry
     - ruamel.yaml >=0.16,<0.17
     - wheel
     - setuptools
   run:
-    - python >=3.8,<3.11
+    - python >={{ python_min }},<3.11
     - h5py >=3.7,<4
     - dask
     - distributed
@@ -45,6 +45,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://syncopy.org
